@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tema claro padrão */
+body {
+  background-color: white;
+  color: #111;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Inputs, botões e cards (exemplo) */
+input, textarea, button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+/* Modo escuro */
+.dark body {
+  background-color: #1a202c; /* cinza escuro */
+  color: #cbd5e0; /* cinza claro - menos branco puro */
+}
+
+.dark input, 
+.dark textarea {
+  background-color: #1e1e1e;
+  color: #d1d5db; /* cinza claro confortável */
+  border: 1px solid #444;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.dark button {
+  background-color: #333;
+  color: #d1d5db; /* cinza claro confortável */
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.dark .card {
+  background-color: #222;
+  border-color: #444;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+  font-family: 'Inter', Arial, sans-serif;
+}
